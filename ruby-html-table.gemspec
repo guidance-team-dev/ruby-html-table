@@ -3,11 +3,11 @@
 Gem::Specification.new do |specification|
   specification.required_ruby_version = '>= 2.6'
   specification.name                  = 'ruby-html-table'
-  specification.version               = '0.0.1'
+  specification.version               = '0.0.2'
   specification.date                  = '2021-04-06'
   specification.summary               = 'HTML Table'
   specification.description           = 'A simple gem to generate a HTML table based on object array'
-  specification.authors               = ['Arthur Ferraz']
+  specification.authors               = ['Guidance Experts - Time Backend', 'Arthur']
   specification.email                 = 'guidance.team.dev@gmail.com'
   specification.homepage              = ''
   specification.license               = 'MIT'
