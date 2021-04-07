@@ -127,8 +127,8 @@ class HtmlTable
   def head_cell_value(attribute)
     return '-' if attribute.blank?
 
-    result = if resources_class.respond_to?('translated_field')
-               resources_class.translated_field(attribute.to_s)
+    result = if resources_class.respond_to?('locale_key')
+               resources_class.locale_key(attribute.to_s)
              else
                attribute
              end
@@ -157,8 +157,8 @@ class HtmlTable
   def body_cell_value(resource, attribute)
     return '-' if resource.blank? || attribute.blank?
 
-    result = if resource.respond_to?('enum_translation')
-               resource.send('enum_translation', attribute, resource.send(attribute))
+    result = if resource.respond_to?('locale_value')
+               resource.send('locale_value', attribute, resource.send(attribute))
              else
                resource.send(attribute)
              end
