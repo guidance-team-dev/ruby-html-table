@@ -2,7 +2,6 @@
 
 require 'active_support/all'
 require 'securerandom'
-require 'pry'
 
 ##
 # Manage HTML table
