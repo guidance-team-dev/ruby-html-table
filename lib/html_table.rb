@@ -158,7 +158,7 @@ class HtmlTable
     return '-' if resource.blank? || attribute.blank?
 
     result = if resource.respond_to?('locale_value')
-               resource.send('locale_value', attribute, resource.send(attribute))
+               resource.send('locale_value', attribute)
              else
                resource.send(attribute)
              end

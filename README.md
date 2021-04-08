@@ -41,14 +41,12 @@ This gem accepts locales for attributes keys and attributes values.
 
 ```ruby
   # For table head locales, it's just declare the follow method for your resources_class
-  def self.locale_key(attribute) # receives attribute as string
+  def self.locale_key(attribute_name) # receives attribute_name as string or as symbol
     # Your locale method
   end
 
   # For table body locales, its just declare the follow method for your resources
-  def locale_value(attribute, value) # receives attribute as string and value as object (any data type)
+  def locale_value(attribute_name) # receives attribute_name as string or as symbol
     # Your locale method
   end
 ```
-
-
