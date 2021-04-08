@@ -29,7 +29,7 @@ class HtmlTable
     @resources_class = resources_class
     @resources_count = resources.size
     @base_url = params[:base_url]
-    @table_id = params[:table_id] || SecureRandom.hex
+    @table_id = params[:table_id] || "table#{SecureRandom.hex}"
     @show_resource_link = params[:show_resource_link] != false && resources_class.method_defined?('id')
     @pagination_options = params[:pagination_options] || DEFAULT_PAGINATION_OPTIONS
     @primary_color = params[:primary_color] || DEFAULT_COLOR
