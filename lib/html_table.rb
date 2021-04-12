@@ -162,7 +162,7 @@ class HtmlTable
              else
                resource.send(attribute)
              end
-    result.present? ? result : '-'
+    result.present? ? result.to_s : '-'
   end
 
   ##

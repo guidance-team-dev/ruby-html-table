@@ -3,7 +3,7 @@
 Gem::Specification.new do |specification|
   specification.required_ruby_version = '>= 2.6'
   specification.name                  = 'ruby-html-table'
-  specification.version               = '0.0.5'
+  specification.version               = '0.0.6'
   specification.date                  = '2021-04-07'
   specification.summary               = 'HTML Table'
   specification.description           = 'A simple gem to generate a HTML table based on object array'
